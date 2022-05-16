@@ -1,0 +1,118 @@
+
+
+.paragCards {
+    padding: 70px;
+    background-image: url(../img/paragCardsImg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+
+    &__card {
+         max-width: 287px;
+    }
+
+    &__head {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        margin-bottom: 25px;
+    }
+
+    &__desc {        
+        max-width: 632px;
+        margin: 0 auto;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;        
+    }
+
+    &__column {    
+        display: flex;
+        justify-content: space-between;
+        margin-right: 61px;        
+        
+        &:last-child {            
+            margin-right: 0;
+        }        
+    }
+
+    &__img {
+        position: absolute;
+        object-fit: cover;
+        border-radius: 50%;  
+        width: 100%;   
+        height: 100%;
+        top:0;
+        left:0;
+           
+        &-wrap {
+            display: block;
+            line-height: 0;     
+            position: relative;  
+            padding-bottom: 100%;     
+            overflow: hidden; 
+            margin-bottom: 40px;
+        }
+    }
+
+    &__body {
+        &-text {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+
+    &__btn-wrap {       
+        text-align: center;    
+        
+    }    
+
+}
+
+@media (max-width: 768px) {
+
+    .paragCards {
+        &__column {
+            margin-right:20px;
+        }
+    }    
+}
+
+@media (max-width: 600px) {
+
+    .paragCards {
+        &__title {
+            font-weight: 700;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        &__row {
+            flex-direction: column;            
+        }
+
+        &__column {
+            margin-bottom:30px;
+            margin-right: 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        
+        &__btn-wrap {
+            display: none;
+        }
+
+        
+    }    
+}
