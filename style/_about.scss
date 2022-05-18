@@ -86,6 +86,8 @@
 @media (max-width: 768px) {
 
     .paragCards {
+        padding: 70px 50px;
+
         &__column {
             margin-right:20px;
         }
@@ -120,4 +122,10 @@
 
         
     }    
+}
+
+@media (max-width: 500px) {
+    .paragCards {
+        padding: 50px 0;
+    }
 }
