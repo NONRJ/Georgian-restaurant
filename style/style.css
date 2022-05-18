@@ -359,12 +359,14 @@ body {
   top: 0;
   left: 0;
 }
+.paragCards__img:first-child {
+  object-position: 15%;
+}
 .paragCards__img-wrap {
   display: block;
   line-height: 0;
   position: relative;
   padding-bottom: 100%;
-  overflow: hidden;
   margin-bottom: 40px;
 }
 .paragCards__body-text {
